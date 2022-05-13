@@ -23,9 +23,11 @@ let changeClass = (previous, next)=>{
         
     }
 }
-changeClass()
-const boton = document.getElementById('dark');
-const html = document.body;
-boton.addEventListener('click', ()=>{
-    html.classList.toggle('dark-mode');
+document.getElementById('restaurar').addEventListener( 'click', ()=>{
+    location.reload();
 });
+changeClass()
+const cuerpo = document.body;
+document.getElementById('dark').addEventListener('click',()=>{ 
+    cuerpo.classList.toggle('dark-mode');
+ });
